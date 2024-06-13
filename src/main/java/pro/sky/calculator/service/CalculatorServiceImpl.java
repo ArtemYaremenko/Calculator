@@ -6,26 +6,22 @@ import org.springframework.stereotype.Service;
 public class CalculatorServiceImpl implements CalculatorService {
 
     @Override
-    public String plus(int a, int b) {
-            return a + " + " + b + " = " + (a + b);
+    public int plus(int a, int b) {
+            return a + b;
     }
 
     @Override
-    public String minus(int a, int b) {
-        return a + " - " + b + " = " + (a - b);
+    public int minus(int a, int b) {
+        return a - b;
     }
 
     @Override
-    public String multiply(int a, int b) {
-        return a + " * " + b + " = " + (a * b);
+    public int multiply(int a, int b) {
+        return a * b;
     }
 
     @Override
-    public String divide(int a, int b) {
-        try {
-            return a + " / " + b + " = " + (a / b);
-        } catch (ArithmeticException exception) {
-            return "Нельзя делить на " + b + "!";
-        }
+    public int divide(int a, int b) {
+        return a / b;
     }
 }

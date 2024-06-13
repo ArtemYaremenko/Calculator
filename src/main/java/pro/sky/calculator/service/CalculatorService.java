@@ -2,11 +2,11 @@ package pro.sky.calculator.service;
 
 public interface CalculatorService {
 
-    String plus(int a, int b);
+    int plus(int a, int b);
 
-    String minus(int a, int b);
+    int minus(int a, int b);
 
-    String multiply(int a, int b);
+    int multiply(int a, int b);
 
-    String divide(int a, int b);
+    int divide(int a, int b);
 }
